@@ -27,6 +27,7 @@ const PasswordProtected = (password) => {
 
   }
   const handlePasscodeChange = (e) => {
+
     sessionStorage.setItem('passcode', e.target.value)
   };
   const handleSubmit = () => {

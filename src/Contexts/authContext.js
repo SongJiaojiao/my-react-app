@@ -7,7 +7,7 @@ export const useAuth = () => {
 };
 
 export const AuthProvider = ({ children }) => {
-  const correctPasscode = 'avocado'; // Replace with your actual passcode
+  const correctPasscode = process.env.REACT_APP_PASSWORD; // Replace with your actual passcode
   const [isAuthenticated, setIsAuthenticated] = useState(() => sessionStorage.getItem('isAuthenticated') || false);
 
   useEffect(() => {
@@ -19,6 +19,7 @@ export const AuthProvider = ({ children }) => {
 
   const authenticate = (passcode) => {
     if (passcode === correctPasscode) {
+      console.log('matched')
       sessionStorage.setItem('isAuthenticated', 'true');
       setIsAuthenticated(true);
     } else {

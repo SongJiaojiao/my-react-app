@@ -402,6 +402,7 @@ h3 {
   display: inline-block;
   width: fit-content;
   background-color: var(--base01);
+  font-family: 'CustomFont';
 
 }
 
