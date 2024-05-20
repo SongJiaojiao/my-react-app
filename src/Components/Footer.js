@@ -34,7 +34,7 @@ export default function Footer() {
                     />
                 </a>
                 <a
-                    href="https://www.linkedin.com/in/jiaojiao-song-136006113/"
+                    href="songjiaojiao1229@gmail.com"
                     target="blank">
                     <img
                     className = 'socialIcon'
@@ -44,7 +44,7 @@ export default function Footer() {
                     />
                 </a>
                 <a
-                    href="https://www.linkedin.com/in/jiaojiao-song-136006113/"
+                    href="https://dribbble.com/-SONG"
                     target="blank">
                     <img
                     className = 'socialIcon'
