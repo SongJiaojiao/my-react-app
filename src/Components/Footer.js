@@ -24,7 +24,7 @@ export default function Footer() {
             <p>Jiaojiao 2024 ✨</p>
             <div style = {socialIcons}>
                 <a            
-                    href="https://www.linkedin.com/in/jiaojiao-song-136006113/"
+                    href="mailto:songjiaojiao1229@gmail.com"
                     target="blank">
                     <img
                         className = 'socialIcon'
@@ -34,7 +34,7 @@ export default function Footer() {
                     />
                 </a>
                 <a
-                    href="songjiaojiao1229@gmail.com"
+                    href="https://www.linkedin.com/in/jiaojiao-song-136006113/"
                     target="blank">
                     <img
                     className = 'socialIcon'

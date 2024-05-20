@@ -7,7 +7,6 @@ export const projects = [
     description:
       "Fuel the discoverability of Marquee data with AI.",
     image: "./search.png",
-    link: "https://reactbootcamp.com",
     bgimage:"./polygon.png",
     bgColor:"var(--surface-lavender)",
     link: "/search"
@@ -18,7 +17,6 @@ export const projects = [
     description:
       "Make informed decisions in rapid markets.",
     image: "./tradedesktop.png",
-    link: "https://reactbootcamp.com",
     bgimage:"./dumbell.png",
     bgColor:"var(--surface-wasabi)",
     link: "/trade"
@@ -29,9 +27,8 @@ export const projects = [
     description:
       "Transform student data into visual stories.",
     image: "./capstone.gif",
-    link: "https://reactbootcamp.com",
     bgimage:"./polygon.png",
-    bgColor:"var(--surface-lavender)",
+    bgColor:"var(--surface-wasabi)",
     link: "/lighthouse"
   },
   {
@@ -40,9 +37,8 @@ export const projects = [
     description:
       "Close more loans at ease.",
     image: "./credit.png",
-    link: "https://reactbootcamp.com",
     bgimage:"./polygon.png",
-    bgColor:"var(--surface-wasabi)",
+    bgColor:"var(--surface-lavender)",
     link: "/roostify",
   },
 ];
