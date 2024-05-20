@@ -27,13 +27,15 @@ const PasswordProtected = (password) => {
 
   }
   const handlePasscodeChange = (e) => {
-
-    sessionStorage.setItem('passcode', e.target.value)
+    const newPasscode = e.target.value;
+    setPasscode(newPasscode);
+    sessionStorage.setItem('passcode', newPasscode);
   };
+
   const handleSubmit = () => {
+    console.log('userinput', passcode);
     authenticate(passcode);
   };
-
 
 
 

@@ -8,6 +8,7 @@ export const useAuth = () => {
 
 export const AuthProvider = ({ children }) => {
   const correctPasscode = process.env.REACT_APP_PASSWORD; // Replace with your actual passcode
+  console.log('pwd from contexts',correctPasscode)
   const [isAuthenticated, setIsAuthenticated] = useState(() => sessionStorage.getItem('isAuthenticated') || false);
 
   useEffect(() => {
@@ -23,6 +24,7 @@ export const AuthProvider = ({ children }) => {
       sessionStorage.setItem('isAuthenticated', 'true');
       setIsAuthenticated(true);
     } else {
+      console.log('userinput from contexts',passcode)
       alert('Incorrect passcode');
     }
   };
