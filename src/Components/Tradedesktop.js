@@ -6,6 +6,7 @@ import BlockwithBullets from "./BlockwithBullets";
 import PasswordProtected from "./PasswordProtected";
 import { useAuth } from '../Contexts/authContext';
 import '../index.css'
+import Footer from "./Footer";
 
 const Tradedesktop = () => {
     const { isAuthenticated } = useAuth();

@@ -3,6 +3,7 @@ import HeroSection from "./HeroSection";
 import TextImageBlock from "./TextImageBlock";
 import BlockwithBullets from "./BlockwithBullets";
 import '../index.css'
+import Footer from "./Footer";
 
 const Lighthouse = () => {
     return (

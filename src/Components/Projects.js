@@ -54,7 +54,7 @@ export default function Projects() {
                 <div className='projectContainer cardParent' style={toyProjects} >
                     <h3>My Toys</h3>
                     <p>I've been passionate about Emotions lately: </p>
-                    <a href="https://inside-u-app.vercel.app" target="_blank" className='toy'>Challenge my negative thoughts  <img style={arrow} src={'/arrowRight.svg'} /></a>
+                    <a href="https://insideu.vercel.app/" target="_blank" className='toy'>Challenge my negative thoughts  <img style={arrow} src={'/arrowRight.svg'} /></a>
                     <a href="https://emotion-landscape.vercel.app" target="_blank" className='toy'>Emotion Journal<img style={arrow} src={'/arrowRight.svg'} /></a>
                     <a href="https://www.figma.com/community/widget/1353419988082585140/kanban" target="_blank" className='toy'>A Kanban Figma Widget<img style={arrow} src={'/arrowRight.svg'} /></a>
                 </div>
