@@ -7,7 +7,8 @@ const BlockwithBullets = ({ imgLink, Title, Description, BgColor, Bullets, Spaci
                 <h1 >
                     {Title}
                 </h1>
-                <p >{Description}</p>
+                {Description.length > 0 && <p >{Description}</p>}
+
                 {Bullets.map((Bullets) => (
                     <a
                         key={Bullets.Title}>
@@ -22,7 +23,7 @@ const BlockwithBullets = ({ imgLink, Title, Description, BgColor, Bullets, Spaci
                 ))}
                 {imgLink &&
                     <img alt="background"
-                        style={{ width: '100%', borderRadius: '16px', backgroundColor: ImgBgColor , padding:Spacing}}
+                        style={{ width: '100%', borderRadius: '16px', backgroundColor: ImgBgColor, padding: Spacing }}
                         src={imgLink} />
                 }
 

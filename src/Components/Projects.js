@@ -54,8 +54,8 @@ export default function Projects() {
                 <div className='projectContainer cardParent' style={toyProjects} >
                     <h2>My passion projects</h2>
                     <p>I've been passionate about Emotions lately: </p>
-                    <a href="https://insideu.vercel.app/" target="_blank" className='toy'>Challenge my negative thoughts  <img style={arrow} src={'/arrowRight.svg'} /></a>
-                    <a href="https://emotion-landscape.vercel.app" target="_blank" className='toy'>Emotion Journal<img style={arrow} src={'/arrowRight.svg'} /></a>
+                    <a href="https://www.insideu.me/" target="_blank" className='toy'>Challenge my negative thoughts  <img style={arrow} src={'/arrowRight.svg'} /></a>
+                    <a href="https://www.nuggets.studio/" target="_blank" className='toy'>Emotion Journal<img style={arrow} src={'/arrowRight.svg'} /></a>
                     <a href="https://www.figma.com/community/widget/1353419988082585140/kanban" target="_blank" className='toy'>A Kanban Figma Widget<img style={arrow} src={'/arrowRight.svg'} /></a>
                 </div>
                 <div className='projectContainer cardParent' style={{ padding: '40px', backgroundColor: 'var(--base02)' }} >
