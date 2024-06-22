@@ -29,7 +29,7 @@ export default function Projects() {
                         href={project.link}
                         key={project.image}
                     >
-                        <div className='cardParent' style={{backgroundColor:project.bgColor}}>
+                        <div className='cardParent' style={{ backgroundColor: project.bgColor }}>
                             <div className="cardTop">
                                 <img
                                     alt="background"
@@ -46,17 +46,17 @@ export default function Projects() {
                                 <h1>
                                     {project.title}
                                 </h1>
-                                <div className="p-medium">{project.description}</div>
+                                <p>{project.description}</p>
                             </div>
                         </div>
                     </a>
                 ))}
                 <div className='projectContainer cardParent' style={toyProjects} >
-                    <h2>My passion projects</h2>
+                    <h1>Side projects</h1>
                     <p>I've been passionate about Emotions lately: </p>
-                    <a href="https://www.insideu.me/" target="_blank" className='toy'>Challenge my negative thoughts  <img style={arrow} src={'/arrowRight.svg'} /></a>
-                    <a href="https://www.nuggets.studio/" target="_blank" className='toy'>Emotion Journal<img style={arrow} src={'/arrowRight.svg'} /></a>
-                    <a href="https://www.figma.com/community/widget/1353419988082585140/kanban" target="_blank" className='toy'>A Kanban Figma Widget<img style={arrow} src={'/arrowRight.svg'} /></a>
+                    <a href="https://www.insideu.me/" target="_blank" className='toy'><p>Challenge my negative thoughts</p>  <img style={arrow} src={'/arrowRight.svg'} /></a>
+                    <a href="https://www.nuggets.studio/" target="_blank" className='toy'><p>Emotion Journal</p><img style={arrow} src={'/arrowRight.svg'} /></a>
+                    <a href="https://www.figma.com/community/widget/1353419988082585140/kanban" target="_blank" className='toy'><p>A Kanban Figma Widget</p><img style={arrow} src={'/arrowRight.svg'} /></a>
                 </div>
                 <div className='projectContainer cardParent' style={{ padding: '40px', backgroundColor: 'var(--base02)' }} >
 

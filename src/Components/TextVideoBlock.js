@@ -1,6 +1,6 @@
 import React from "react";
 
-const TextVideoBlock = ({ videoLink, Title, Description, BgColor,borderRadius, Spacing}) => {
+const TextVideoBlock = ({ videoLink, Title, Description, BgColor,borderRadius, Spacing,ImgBgColor}) => {
     return (
         <div style={{ backgroundColor: BgColor, padding:Spacing }}>
             <div className="projectSection">
@@ -8,7 +8,7 @@ const TextVideoBlock = ({ videoLink, Title, Description, BgColor,borderRadius, S
                     {Title}
                 </h1>
                 <p>{Description}</p>
-                <div style={{ width: '100%',maxWidth:'760px', overflow: 'hidden', borderRadius: borderRadius }}>
+                <div style={{ width: '100%',maxWidth:'760px', overflow: 'hidden', borderRadius: borderRadius, padding:Spacing,backgroundColor:ImgBgColor}}>
                     <video style={{ width: '100%', display: 'block' }} autoPlay loop>
                         <source src={videoLink} type="video/mp4" />
                     </video>
