@@ -5,7 +5,7 @@ import Button from "./Button";
 const About = () => {
     return (
         <section className="py-24">
-            <div className="text-7xl font-bold leading-relaxed font-slackside mb-4" >Jiaojiao Song</div>
+            <div className="text-5xl font-regular leading-relaxed" style={{ fontFamily: "'Borel', cursive" }}>Jiaojiao Song</div>
             <div className="text-xl font-regular leading-relaxed">
                 I play with pixels to build memorable experiences. <br/>
                 Currently building agentic data analytics @Meta
