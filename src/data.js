@@ -26,7 +26,7 @@ export const projects = [
     description:
       "Fuel the discoverability of Marquee data with AI.",
     image: "./Search/searchProjectImg.png",
-    bgimage:"./polygon.png",
+    bgimage:"./Shapes/polygon.svg",
     bgColor:"var(--surface-lavender)",
     link: "/search",
     type: "Design"
@@ -36,7 +36,7 @@ export const projects = [
     description:
       "A CBT app to challange negative thoughts",
     image: "./InsideMe/InsideMe.png",
-    bgimage:"./dumbell.png",
+    bgimage:"./Shapes/heart.svg",
     bgColor:"var(--surface-wasabi)",
     link: "https://www.insideu.me/",
     type: "Full-Stack"
@@ -46,7 +46,7 @@ export const projects = [
     description:
       "Make informed decisions in rapid markets.",
     image: "./Trade/tradeProjectImg.png",
-    bgimage:"./dumbell.png",
+    bgimage:"./Shapes/dumbell.svg",
     bgColor:"var(--surface-wasabi)",
     link: "/trade",
     type: "Design"
@@ -57,7 +57,7 @@ export const projects = [
     description:
       "Transform student data into visual stories.",
     image: "./capstone.gif",
-    bgimage:"./polygon.png",
+    bgimage:"./Shapes/polygon.svg",
     bgColor:"var(--surface-wasabi)",
     link: "/lighthouse",
     type: "Design"
@@ -68,7 +68,7 @@ export const projects = [
     description:
       "Help designers manager their tasks",
     image: "./kanban/Kanban.png",
-    bgimage:"./polygon.png",
+    bgimage:"./Shapes/polygon.svg",
     bgColor:"var(--surface-wasabi)",
     link: "/lighthouse",
     type: "Front-end"

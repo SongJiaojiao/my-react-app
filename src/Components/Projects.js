@@ -11,8 +11,8 @@ export default function Projects() {
                 return "group-hover:scale-110";
             case "Search":
                 return "group-hover:rotate-45 ";
-            case "Trading Desktop":
-                return "group-hover:-rotate-15 group-hover:scale-105";
+            case "Inside Me":
+                return "group-hover:scale-90";
             case "Student Dashboard":
                 return "group-hover:skew-x-12 group-hover:scale-110";
             default:
@@ -58,39 +58,55 @@ export default function Projects() {
                         >
                             <div className="rounded-3xl bg-espresso-100 transition-transform duration-300 hover:scale-[1.01] group-hover:scale-[1.01] p-4">
                                 <div className="relative flex items-center justify-center text-center mx-auto aspect-[3/2]">
-                                    {project.title !== "Datamte" && (
-                                        <img
-                                            alt="background"
-                                            className={`w-1/2 absolute transition-transform duration-200 ${getHoverClass(project)}`}
-                                            src={project.bgimage}
-                                        />
-                                    )}
+                                                                    {project.title !== "Datamte" && project.title !== "Nuggets" && (
+                                    <img
+                                        alt="background"
+                                        className={`w-1/2 absolute transition-transform duration-200 object-contain ${getHoverClass(project)}`}
+                                        src={project.bgimage}
+                                    />
+                                )}
                                     <img
                                         alt="gallery"
                                         className="w-8/12 relative object-contain z-10"
                                         src={project.image}
                                     />
                                     
-                                    {/* Stars for Datamte project */}
-                                    {project.title === "Datamte" && (
-                                        <>
-                                            <img 
-                                                src="/DataAI/star.svg" 
-                                                alt="star" 
-                                                className="absolute w-16 h-16 rotate-45 bottom-20 left-40 z-0 transition-all duration-500 ease-out group-hover:-translate-x-16 group-hover:-translate-y group-hover:rotate-90 pointer-events-none"
-                                            />
-                                            <img 
-                                                src="/DataAI/star.svg" 
-                                                alt="star" 
-                                                className="absolute w-6 h-6 rotate-45 top-32 right-48  z-0 transition-all duration-500 ease-out group-hover:translate-x-8 group-hover:-translate-y-24 group-hover:rotate-180 group-hover:scale-110 pointer-events-none"
-                                            />
-                                            <img 
-                                                src="/DataAI/star.svg" 
-                                                alt="star" 
-                                                className="absolute w-10 h-10 rotate-45 bottom-8 right-40  z-0 transition-all duration-500 ease-out group-hover:translate-x-24 group-hover:translate-y-2 group-hover:rotate-180 pointer-events-none"
-                                            />
-                                        </>
-                                    )}
+                                                                    {/* Stars for Datamte project */}
+                                {project.title === "Datamte" && (
+                                    <>
+                                        <img 
+                                            src="/DataAI/star.svg" 
+                                            alt="star" 
+                                            className="absolute w-16 h-16 rotate-45 bottom-16 left-24 z-0 transition-all duration-500 ease-out group-hover:-translate-x-16 group-hover:-translate-y group-hover:rotate-90 pointer-events-none"
+                                        />
+                                        <img 
+                                            src="/DataAI/star.svg" 
+                                            alt="star" 
+                                            className="absolute w-6 h-6 rotate-45 top-32 right-48  z-0 transition-all duration-500 ease-out group-hover:translate-x-8 group-hover:-translate-y-24 group-hover:rotate-180 group-hover:scale-110 pointer-events-none"
+                                        />
+                                        <img 
+                                            src="/DataAI/star.svg" 
+                                            alt="star" 
+                                            className="absolute w-10 h-10 rotate-45 bottom-8 right-40  z-0 transition-all duration-500 ease-out group-hover:translate-x-24 group-hover:translate-y-2 group-hover:rotate-180 pointer-events-none"
+                                        />
+                                    </>
+                                )}
+                                
+                                {/* Flowers for Nuggets project */}
+                                {project.title === "Nuggets" && (
+                                    <>
+                                        <img 
+                                            src="Shapes/flower.svg" 
+                                            alt="flower" 
+                                            className="absolute w-16 h-16 bottom-8 left-20 z-0 transition-all duration-500 ease-out group-hover:rotate-180 group-hover:scale-125 pointer-events-none"
+                                        />
+                                        <img 
+                                            src="Shapes/flower.svg" 
+                                            alt="flower" 
+                                            className="absolute w-8 h-8  top-8 right-24 z-0 transition-all duration-500 ease-out group-hover:-rotate-180 group-hover:scale-110 pointer-events-none"
+                                        />
+                                    </>
+                                )}
                                 </div>
                                 {/* <div className="w-full h-px bg-espresso-900 "></div> */}
                                 <div className="flex flex-col justify-start items-start px-6 py-4 bg-espresso-50 rounded-3xl">
