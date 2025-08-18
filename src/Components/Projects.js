@@ -24,31 +24,6 @@ export default function Projects() {
         <section>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8  mx-auto">
                 {projects.map((project, index) => (
-                    project.title === "Figma Kanban Widget" ? (
-                        <div key={project.image} className="rounded-3xl bg-espresso-100 transition-transform duration-300 hover:scale-[1.01] p-4 h-full">
-                            <div className="relative flex items-center justify-center text-center mx-auto aspect-[3/2] mb-4">
-                                <img
-                                    alt="background"
-                                    className="w-1/2 absolute transition-transform duration-200 group-hover:rotate-[15deg]"
-                                    src={project.bgimage}
-                                />
-                                <img
-                                    alt="gallery"
-                                    className="w-8/12 relative object-contain z-10"
-                                    src={project.image}
-                                />
-                            </div>
-                            <div className="flex flex-col justify-end items-start px-6 py-4 bg-espresso-50 rounded-3xl">
-                                <div className="flex justify-between items-center w-full">
-                                    <div className="text-xl font-semibold">
-                                        {project.title}
-                                    </div>
-                                    <TagRow tags={[project.type]} />
-                                </div>
-                                <p className="text-gray-700">{project.description}</p>
-                            </div>
-                        </div>
-                    ) : (
                         <a
                             href={project.link}
                             key={project.image}
@@ -120,16 +95,16 @@ export default function Projects() {
                                 </div>
                             </div>
                         </a>
-                    )
                 ))}
                 
-                <div className="rounded-[32px] p-8 bg-espresso-100 h-fit">
-                    <img className="w-28 h-28 rounded-full mb-6" src="/photo.png" alt="avatar" />
+                <div className="rounded-[32px] p-8 bg-espresso-100">
+                    <div className="flex items-start justify-start mb-4">
+                        <img className="rounded-full w-16 h-16 object-cover" src="/photo.png" alt="avatar" />
+                    </div>
                     <h3 className="text-xl font-semibold mb-3">Thanks for stopping by</h3>
                     <p className="text-gray-700 leading-relaxed">
                         Coming from a HCI & Learning Science background, I am naturally drawn to making products that can impact how people learn and grow. <br /><br />
                         Off the clock, I am also a passionate skier ⛷. And I believe life, just like Skiing, is all about embracing fear and using it as a driving force to move forward.<br /><br />
-                        Drop me a message below if you want to talk about AI, Mental Wellness, or ski.
                     </p>
                 </div>
             </div>

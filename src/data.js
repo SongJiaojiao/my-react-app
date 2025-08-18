@@ -70,7 +70,7 @@ export const projects = [
     image: "./kanban/Kanban.png",
     bgimage:"./Shapes/polygon.svg",
     bgColor:"var(--surface-wasabi)",
-    link: "/lighthouse",
+    link: "https://www.figma.com/community/widget/1353419988082585140/kanban",
     type: "Front-end"
   },
 
