@@ -21,39 +21,7 @@ export default function Footer() {
 
     return (
         <div style={footer}>
-            <p>Jiaojiao 2024 ✨</p>
-            <div style = {socialIcons}>
-                <a            
-                    href="mailto:songjiaojiao1229@gmail.com"
-                    target="blank">
-                    <img
-                        className = 'socialIcon'
-                        alt="email"
-                    
-                        src={email}
-                    />
-                </a>
-                <a
-                    href="https://www.linkedin.com/in/jiaojiao-song-136006113/"
-                    target="blank">
-                    <img
-                    className = 'socialIcon'
-                        alt="linkedin"
-              
-                        src={linkedin}
-                    />
-                </a>
-                <a
-                    href="https://dribbble.com/-SONG"
-                    target="blank">
-                    <img
-                    className = 'socialIcon'
-                        alt="dribbble"
-
-                        src={dribbble}
-                    />
-                </a>
-            </div>
+            <p>Jiaojiao 2025 ✨</p>
 
 
 

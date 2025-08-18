@@ -1,34 +1,24 @@
 import React from "react";
 
-const TextImageBlock = ({ imgLink, Title, Description, BgColor, Spacing, ImgBgColor,borderRadius }) => {
+const TextImageBlock = ({ imgLink, Title, Description, BgColor, Spacing, ImgBgColor, borderRadius }) => {
 
-    const formattedDescription = Description.split('\n').map((text, index,array) => (
-        <React.Fragment key={index}>
-            {text}
-            {index !== array.length - 1 && <br />} 
-        </React.Fragment>
-    ));
+    const formattedDescription = Description.replace(/\n\n/g, '<br /><br />').replace(/\n/g, '<br />');
 
     return (
         <div style={{ backgroundColor: BgColor }}>
-
-            <div className="projectSection">
-                <h1 >
+            <div className="mb-16">
+                <h1>
                     {Title}
                 </h1>
-                {formattedDescription && <p>{formattedDescription}</p>}
+                <p dangerouslySetInnerHTML={{ __html: formattedDescription }}></p>
                 
                 {imgLink &&
-                <div style={{ maxWidth:'760px',backgroundColor: ImgBgColor,borderRadius: borderRadius,padding:Spacing }}>
-                    <img alt="background"  src={imgLink} style={{ objectFit:' cover',width:'100%' ,display: 'block' }}/>
+                <div className="my-6 max-w-2xl" style={{ backgroundColor: ImgBgColor, borderRadius: borderRadius, padding: Spacing }}>
+                    <img alt="background" src={imgLink} style={{ objectFit: 'cover', width: '100%', display: 'block' }}/>
                 </div>
                 }
             </div>
-
         </div>
-
-
-
     )
 }
 

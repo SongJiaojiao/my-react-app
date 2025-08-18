@@ -7,14 +7,8 @@ export default function Navbar() {
       };
 
     return (
-            <div id="navbar">               
-                    <img
-                        alt="gallery"
-                        width={'420px'}
-                        src='./name.svg'
-                    />
-                    <Button text={'Resume'} onClick={handleOpenPDF} />
-
+            <div  className="flex justify-end">               
+                    {/* <Button text={'Resume'} onClick={handleOpenPDF} /> */}
             </div>
     )
 }
