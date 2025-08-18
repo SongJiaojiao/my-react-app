@@ -12,9 +12,9 @@ export default function Projects() {
             case "Search":
                 return "group-hover:rotate-45 ";
             case "Inside Me":
-                return "group-hover:scale-90";
+                return "group-hover:scale-[700%]";
             case "Student Dashboard":
-                return "group-hover:skew-x-12 group-hover:scale-110";
+                return "group-hover:skew-x-12 group-hover:scale-250";
             default:
                 return "group-hover:rotate-[15deg]";
         }
@@ -36,7 +36,7 @@ export default function Projects() {
                                                                     {project.title !== "Datamte" && project.title !== "Nuggets" && (
                                     <img
                                         alt="background"
-                                        className={`w-1/2 absolute transition-transform duration-200 object-contain ${getHoverClass(project)}`}
+                                        className={`absolute transition-transform duration-200 object-contain ${project.title === "Inside Me" ? "w-8 h-8" : "w-1/2"} ${getHoverClass(project)}`}
                                         src={project.bgimage}
                                     />
                                 )}
@@ -73,7 +73,7 @@ export default function Projects() {
                                         <img 
                                             src="Shapes/flower.svg" 
                                             alt="flower" 
-                                            className="absolute w-16 h-16 bottom-8 left-20 z-0 transition-all duration-500 ease-out group-hover:rotate-180 group-hover:scale-125 pointer-events-none"
+                                            className="absolute w-24 h-24 bottom-8 left-20 z-0 transition-all duration-500 ease-out group-hover:rotate-180 group-hover:scale-125 pointer-events-none"
                                         />
                                         <img 
                                             src="Shapes/flower.svg" 
