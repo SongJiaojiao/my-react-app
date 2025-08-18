@@ -67,7 +67,7 @@ export const projects = [
     title: "Figma Kanban Widget",
     description:
       "Help designers manager their tasks",
-    image: "./kanban/kanban.png",
+    image: "./kanban/Kanban.png",
     bgimage:"./polygon.png",
     bgColor:"var(--surface-wasabi)",
     link: "/lighthouse",
