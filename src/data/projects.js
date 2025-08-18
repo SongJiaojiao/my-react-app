@@ -1,13 +1,13 @@
 export const projectsData = {
   dataAI: {
     hero: {
-      imgLink: '/Search/splash.png',
+      imgLink: '/DataAI/dataAI.png',
       title: 'Datamte',
       description: 'Your AI companion for data questions',
       tags: ['Web', '2025 - NOW'],
       width: '500px',
       spacing: '64px 16px',
-      bgColor: 'var(--surface-lavender)'
+      bgColor: '#E3F2FD'
     },
     sections: [
       {
@@ -216,8 +216,8 @@ export const projectsData = {
       description: 'Transform student data into visual stories',
       tags: ['Capstone', '2018'],
       width: '100%',
-      spacing: '64px 16px',
-      bgColor: 'var(--surface-wasabi)'
+      spacing: '0px',
+      bgColor: 'transparent'
     },
     sections: [
       {
@@ -454,6 +454,26 @@ export const projectsData = {
         spacing: '32px 36%',
         borderRadius: '16px',
         description: "Loan officers often get last minute requests from borrowers, during evenings and weekends. We understand the circumstances and give loan officers time back by allowing rapid retrieval of the credit information while they are often distracted."
+      }
+    ]
+  },
+  nuggets: {
+    hero: {
+      imgLink: '/DataAI/dataAI.png',
+      title: 'Nuggets',
+      description: 'Journal your thoughts and feelings',
+      tags: ['Full-Stack', '2024'],
+      width: '500px',
+      spacing: '64px 16px',
+      bgColor: '#E3F2FD'
+    },
+    sections: [
+      {
+        type: 'textImage',
+        imgLink: null,
+        title: 'About Nuggets',
+        bgColor: 'var(--surface-primary)',
+        description: "Nuggets is a mental wellness app that helps users better recognize and cope with their emotions through journaling and reflection. Built as a full-stack application with modern web technologies."
       }
     ]
   }

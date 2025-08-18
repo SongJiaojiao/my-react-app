@@ -8,7 +8,18 @@ export const projects = [
     image: "./DataAI/dataAI.png",
     bgimage:"./polygon.png",
     bgColor:"var(--surface-lavender)",
-    link: "/dataai"
+    link: "/dataai",
+    type: "Design"
+  },
+  {
+    title: "Nuggets",
+    description:
+      "Recognize your emotions through journaling",
+    image: "./Nuggets/nuggets.png",
+    bgimage:"./dumbell.png",
+    bgColor:"var(--surface-wasabi)",
+    link: "https://www.nuggets.studio/",
+    type: "Full-Stack"
   },
   {
     title: "Search",
@@ -17,7 +28,18 @@ export const projects = [
     image: "./Search/searchProjectImg.png",
     bgimage:"./polygon.png",
     bgColor:"var(--surface-lavender)",
-    link: "/search"
+    link: "/search",
+    type: "Design"
+  },
+  {
+    title: "Inside Me",
+    description:
+      "A CBT app to challange negative thoughts",
+    image: "./InsideMe/InsideMe.png",
+    bgimage:"./dumbell.png",
+    bgColor:"var(--surface-wasabi)",
+    link: "https://www.insideu.me/",
+    type: "Full-Stack"
   },
   {
     title: "Trading Desktop",
@@ -26,8 +48,10 @@ export const projects = [
     image: "./Trade/tradeProjectImg.png",
     bgimage:"./dumbell.png",
     bgColor:"var(--surface-wasabi)",
-    link: "/trade"
+    link: "/trade",
+    type: "Design"
   },
+
   {
     title: "Student Dashboard",
     description:
@@ -35,7 +59,19 @@ export const projects = [
     image: "./capstone.gif",
     bgimage:"./polygon.png",
     bgColor:"var(--surface-wasabi)",
-    link: "/lighthouse"
+    link: "/lighthouse",
+    type: "Design"
+  },
+
+  {
+    title: "Figma Kanban Widget",
+    description:
+      "Help designers manager their tasks",
+    image: "./kanban/kanban.png",
+    bgimage:"./polygon.png",
+    bgColor:"var(--surface-wasabi)",
+    link: "/lighthouse",
+    type: "Front-end"
   },
 
 
