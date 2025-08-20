@@ -12,7 +12,7 @@ export default function Projects() {
             case "Search":
                 return "group-hover:rotate-45 ";
             case "Inside Me":
-                return "group-hover:scale-[700%]";
+                return "group-hover:scale-[700%] transition-transform duration-300 ease-out transition-transform ";
             case "Student Dashboard":
                 return "group-hover:skew-x-12 group-hover:scale-250";
             default:
