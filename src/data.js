@@ -6,7 +6,7 @@ export const projects = [
     description:
       "Your AI companion for data questions",
     image: "./DataAI/dataAI.png",
-    bgimage:"./polygon.png",
+    bgimage: null,
     bgColor:"var(--surface-lavender)",
     link: "/dataai",
     type: "Design"
