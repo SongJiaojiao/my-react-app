@@ -46,8 +46,8 @@ export default function Projects() {
                                         src={project.image}
                                     />
                                     
-                                                                    {/* Stars for Datamte project */}
-                                {project.title === "Datamte" && (
+                                                                    {/* Stars for Datamate project */}
+                                {project.title === "Datamate" && (
                                     <>
                                         <img 
                                             src="/DataAI/star.svg" 

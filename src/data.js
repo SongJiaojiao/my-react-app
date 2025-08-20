@@ -2,7 +2,7 @@ const purpleBg = 'var(--surface-lavender)';
 const wasabiBg = 'var(--surface-wasabi)';
 export const projects = [
   {
-    title: "Datamte",
+    title: "Datamate",
     description:
       "Your AI companion for data questions",
     image: "./DataAI/dataAI.png",
