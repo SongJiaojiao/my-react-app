@@ -22,6 +22,16 @@ export const projects = [
     type: "Full-Stack"
   },
   {
+    title: "Trading Desktop",
+    description:
+      "Make informed decisions in rapid markets.",
+    image: "./Trade/tradeProjectImg.png",
+    bgimage:"./Shapes/dumbell.svg",
+    bgColor:"var(--surface-wasabi)",
+    link: "/trade",
+    type: "Design"
+  },
+  {
     title: "Search",
     description:
       "Fuel the discoverability of Marquee data with AI.",
@@ -41,16 +51,7 @@ export const projects = [
     link: "https://www.insideu.me/",
     type: "Full-Stack"
   },
-  {
-    title: "Trading Desktop",
-    description:
-      "Make informed decisions in rapid markets.",
-    image: "./Trade/tradeProjectImg.png",
-    bgimage:"./Shapes/dumbell.svg",
-    bgColor:"var(--surface-wasabi)",
-    link: "/trade",
-    type: "Design"
-  },
+
 
   {
     title: "Student Dashboard",
