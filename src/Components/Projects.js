@@ -7,7 +7,7 @@ import TagRow from './TagRow';
 export default function Projects() {
     const getHoverClass = (project) => {
         switch (project.title) {
-            case "Datamte":
+            case "Datamate":
                 return "group-hover:scale-110";
             case "Search":
                 return "group-hover:rotate-45 ";
@@ -33,7 +33,7 @@ export default function Projects() {
                         >
                             <div className="rounded-3xl bg-espresso-100 transition-transform duration-300 hover:scale-[1.01] group-hover:scale-[1.01] p-4">
                                 <div className="relative flex items-center justify-center text-center mx-auto aspect-[3/2]">
-                                                                    {project.title !== "Datamte" && project.title !== "Nuggets" && (
+                                                                    {project.title !== "Datamate" && project.title !== "Nuggets" && (
                                     <img
                                         alt="background"
                                         className={`absolute transition-transform duration-200 object-contain ${project.title === "Inside Me" ? "w-8 h-8" : "w-1/2"} ${getHoverClass(project)}`}
