@@ -33,7 +33,6 @@ const PasswordProtected = (password) => {
   };
 
   const handleSubmit = () => {
-    console.log('userinput', passcode);
     authenticate(passcode);
   };
 

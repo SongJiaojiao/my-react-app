@@ -7,7 +7,6 @@ export const useAuth = () => {
 };
 
 export const AuthProvider = ({ children }) => {
-  const correctPasscode = process.env.REACT_APP_PASSWORD; // Replace with your actual passcode
   const [isAuthenticated, setIsAuthenticated] = useState(() => sessionStorage.getItem('isAuthenticated') || false);
 
   useEffect(() => {
@@ -17,14 +16,27 @@ export const AuthProvider = ({ children }) => {
     }
   }, []);
 
-  const authenticate = (passcode) => {
-    if (passcode === correctPasscode) {
-  
-      sessionStorage.setItem('isAuthenticated', 'true');
-      setIsAuthenticated(true);
-    } else {
-
-      alert('Incorrect passcode');
+  const authenticate = async (passcode) => {
+    try {
+      const response = await fetch('/api/validate-password', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ password: passcode }),
+      });
+      
+      const data = await response.json();
+      
+      if (data.success) {
+        sessionStorage.setItem('isAuthenticated', 'true');
+        setIsAuthenticated(true);
+      } else {
+        alert('Incorrect passcode');
+      }
+    } catch (error) {
+      console.error('Authentication error:', error);
+      alert('Authentication failed. Please try again.');
     }
   };
 
